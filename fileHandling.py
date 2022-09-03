@@ -42,3 +42,35 @@ prints:
 hello
 there!
 """
+#now lets learn how to create a new file and write on it
+
+with open('test3.txt','w') as file:
+    file.write("firstLine ")
+    file.write("continue FirstLine")
+    file.write("\n secondLine")
+#as we can see that write() function writes on the same line,
+#also everytime we execute the code , the file is replaced
+#let's write multiple lines with a single line of code
+
+with open('test4', 'w') as file:
+    file.writelines(["first line", "\nsecond line", "\nthird line"])
+
+#the file is replaced everytime we run the script, let's write to it without replacing it by using the append mode
+
+with open('test4','a') as file:
+    file.writelines(["\nfourth line"])
+
+#Now let's read the whole file with read mode
+
+with open('test4', 'r') as file:
+    print(file.read()) #outputs the full file
+
+#let's read only the first 10 characters
+
+with open('test4','r') as file:
+    print(file.read(10)) #outputs only the first 10 characters
+
+#now let's read it line by line by using the readlines() function which returns a list of lines
+with open('test4','r') as file:
+    print(file.readlines()) #outputs a list of file lines that you can iterate over
+
