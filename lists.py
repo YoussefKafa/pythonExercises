@@ -50,4 +50,5 @@ list2.sort()
 list3=list2.copy()
 #list3 output[1,2,3]
 list3[0]=2
+#list3[3]=4 IndexError: list assignment index out of range
 #list3 output [2,2,3] Lists are mutable
