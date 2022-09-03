@@ -10,3 +10,5 @@ print(str[::2])
 #output pto
 print(str[::-1]) #reverse
 #output nohtyp
+print(str[:])
+#output python
