@@ -41,6 +41,19 @@ class Student(Person):
         return self.name+ " is graduated."
 
 student=Student("Youssef",28,123)
-print(student.studentId)
-print(student.play())
-print(student.graduate())
+#print(student.studentId)
+#print(student.play())
+#print(student.graduate())
+
+
+#multiple inheritance
+
+class Singer(Student,Person): #child before parent ordering
+    def __init__(self, name, age,studentId, plays) -> None:
+        super().__init__(name, age,studentId)
+        self.plays=plays
+    def SingerInfo(self):
+        return "id: " +str(self.studentId)+ " : " +self.name + " is " + str(self.age) + " years old. " + " and plays " + self.plays
+
+singer=Singer("Youssef",28,123,"Violin")
+print(singer.SingerInfo())
