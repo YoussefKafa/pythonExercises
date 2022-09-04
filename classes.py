@@ -56,4 +56,4 @@ class Singer(Student,Person): #child before parent ordering
         return "id: " +str(self.studentId)+ " : " +self.name + " is " + str(self.age) + " years old. " + " and plays " + self.plays
 
 singer=Singer("Youssef",28,123,"Violin")
-print(singer.SingerInfo())
+#print(singer.SingerInfo())
