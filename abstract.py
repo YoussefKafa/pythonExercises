@@ -1,6 +1,8 @@
 from abc import ABC,abstractmethod
 
 class Polygon(ABC):
+    def whatIsThis(self):
+        print("this is a polygon.")
     @abstractmethod
     def numberOfSides(self):
         pass
@@ -16,4 +18,6 @@ class Pentagon(Polygon):
 triangle=Triangle()
 pentagon=Pentagon()
 triangle.numberOfSides()
+triangle.whatIsThis()
 pentagon.numberOfSides()
+pentagon.whatIsThis()
