@@ -24,3 +24,8 @@ arr3=np.array([   [[1,2],[3,4]] ,   [[5,6],[7,8]]   ])
 arr4=np.array([1,2,3,4,5], ndmin=6)
 #print(arr4.ndim) #prints 6
 
+# array indexing
+#print(arr1[1]) #prints 2
+#print(arr2[1,0]) #prints 3
+#print(arr3[0,0,0]) #prints 1
+
