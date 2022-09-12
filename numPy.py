@@ -29,3 +29,18 @@ arr4=np.array([1,2,3,4,5], ndmin=6)
 #print(arr2[1,0]) #prints 3
 #print(arr3[0,0,0]) #prints 1
 
+# slicing arrays
+"""
+We pass a slice instead of index like this: [start:end].
+We can also define the step, like this: [start:end:step].
+"""
+arr1=[1,2,3,4,5]
+#print(arr1[0:2]) #prints 1 2
+#print(arr1[0:4:1]) #prints 1 2 3 4
+#print(arr1[0:4:2])  #prints 1 3
+#print(arr1[0:5:2]) #prints [1,3,5]
+#print(arr1[0:10]) #prints [1,2,3,4,5]
+#print(arr1[:3]) #prints [1,2,3]
+#print(arr1[-3:-1]) #prints [4,3]
+arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+#print(arr[0:2, 1:4]) #[[2 3 4][7 8 9]] #arrays from 0 to 2 and slice from 1 to 4 from each
