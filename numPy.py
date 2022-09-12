@@ -44,3 +44,35 @@ arr1=[1,2,3,4,5]
 #print(arr1[-3:-1]) #prints [4,3]
 arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 #print(arr[0:2, 1:4]) #[[2 3 4][7 8 9]] #arrays from 0 to 2 and slice from 1 to 4 from each
+
+
+
+# Data types in numpy
+"""
+i - integer
+b - boolean
+u - unsigned integer
+f - float
+c - complex float
+m - timedelta
+M - datetime
+O - object
+S - string
+U - unicode string
+V - fixed chunk of memory for other type ( void )
+"""
+arr = np.array([1, 2, 3, 4], dtype='S')
+#print(arr) #prints [b'1' b'2' b'3' b'4']
+#print(arr.dtype) #prints |S1
+arr = np.array([1, 2, 3, 4], dtype='i4') #4 is the size
+#print(arr) #prints [1 2 3 4]
+#print(arr.dtype) #prints int32
+#arr = np.array(['a', 2, 3, 4], dtype='i')
+#the last array raise an error ( ValueError: invalid literal for int() with base 10: 'a' )
+#converting
+arr = np.array([1.1, 2.1, 3.1])
+newarr = arr.astype('S')
+#print(newarr) #prints [b'1.1' b'2.1' b'3.1']
+arr = np.array([1, 0, 3])
+newarr = arr.astype(bool)
+#print(newarr) # [True False True]
