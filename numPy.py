@@ -76,3 +76,20 @@ newarr = arr.astype('S')
 arr = np.array([1, 0, 3])
 newarr = arr.astype(bool)
 #print(newarr) # [True False True]
+
+# Copy VS. View
+"""
+The main difference between a copy and a view of an array is that the copy is a new array, and the view is just a view of the original array.
+"""
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.copy()
+arr[0] = 42
+#print(arr) #[42  2  3  4  5]
+#print(x) # [1 2 3 4 5]
+
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.view()
+arr[0] = 42
+#print(arr) # [42  2  3  4  5]
+#print(x) # [42  2  3  4  5]
+
