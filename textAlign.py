@@ -19,6 +19,9 @@ def charToRhombus(ch,width):
                 c+=ch
             print(c.center(width-1," "))
 
-
+def textLeftAlign(text,width,space):
+    print(text.ljust(width,space))
+def textRightAlign(text,width,space):
+    print(text.rjust(width,space))
 if __name__=='__main__':
-    charToRhombus("*",100)
+    charToRhombus("*",1)
