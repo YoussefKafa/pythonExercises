@@ -24,4 +24,6 @@ def textLeftAlign(text,width,space):
 def textRightAlign(text,width,space):
     print(text.rjust(width,space))
 if __name__=='__main__':
-    charToRhombus("*",1)
+    c=input("Enter Any Character: ")
+    width=int(input("Enter the width of your Rhombus: "))
+    charToRhombus(c,width)
