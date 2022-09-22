@@ -38,3 +38,10 @@ prints:
 aaya
 ahmad
 """
+
+"""
+taking a list of integers as input
+"""
+myList=list(map(int,input().split()))
+mySet=set(map(int,input().split()))
+#print(mySet)
