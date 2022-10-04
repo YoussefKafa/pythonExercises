@@ -1,2 +1,0 @@
-firstLine continue FirstLine
- secondLine
