@@ -6,6 +6,7 @@ the insert and delete operations are often called push and pop.
 """
 
 #implementation using lists
+#LIFO
 stack=[]
 stack.append(1)
 stack.append(2)
@@ -14,3 +15,18 @@ stack.append(3)
 stack.pop()
 stack.pop()
 #print(stack)
+
+#####################################################################
+
+# Implementation using collections.deque:
+# LIFO
+from collections import deque
+
+stack=deque()
+stack.append(1)
+stack.append(2)
+stack.append(3)
+#print(stack) #deque([1,2,3])
+stack.pop()
+stack.pop()
+#print(stack) # deque([1])
