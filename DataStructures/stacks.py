@@ -26,7 +26,20 @@ stack=deque()
 stack.append(1)
 stack.append(2)
 stack.append(3)
-#print(stack) #deque([1,2,3])
+#print(stack) # outputs deque([1,2,3])
 stack.pop()
 stack.pop()
-#print(stack) # deque([1])
+#print(stack) #outputs deque([1])
+
+#Implementation using queue module
+from queue import LifoQueue
+stack=LifoQueue(maxsize=3)
+stack.put(1)
+stack.put(2)
+stack.put(3)
+#print(stack) # outputs deque([1,2,3])
+stack.get()
+stack.get()
+while not stack.empty():
+    #print(stack.get(),end=' ')
+    pass
