@@ -22,5 +22,4 @@ linkedList1.headValue.nextValue=n2
 #create the third node and link the second node to the third one
 n3=Node("Tues")
 n2.nextValue=n3
-
 linkedList1.printIt()
