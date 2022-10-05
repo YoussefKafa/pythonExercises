@@ -32,15 +32,15 @@ queue.popleft()
 #third way of implementing a queue in python using the Queue module
 
 from queue import Empty, Queue
-queue=Queue(maxsize=3)
-queue.put(1)
-queue.put(2)
-queue.put(3)
-#print(list(queue.queue))
-queue.get()
-queue.get()
+q=Queue(maxsize=3)
+q.put(1)
+q.put(2)
+q.put(3)
+#print(list(q.queue))
+q.get()
+q.get()
 #print(queue.full()) #not full so it will print False
-#print(list(queue.queue))
-queue.get()
-#print(list(queue.queue))
+#print(list(q.queue))
+q.get()
+#print(list(q.queue))
 
