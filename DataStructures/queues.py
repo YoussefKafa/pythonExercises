@@ -14,6 +14,7 @@ queue.pop(0)
 
 #second way of implementation using queue.deque
 from collections import deque
+from sys import maxsize
 queue=deque()
 queue.append(1)
 queue.append(2)
@@ -27,4 +28,19 @@ queue.popleft()
 
 
 
+
+#third way of implementing a queue in python using the Queue module
+
+from queue import Empty, Queue
+queue=Queue(maxsize=3)
+queue.put(1)
+queue.put(2)
+queue.put(3)
+#print(list(queue.queue))
+queue.get()
+queue.get()
+#print(queue.full()) #not full so it will print False
+#print(list(queue.queue))
+queue.get()
+#print(list(queue.queue))
 
