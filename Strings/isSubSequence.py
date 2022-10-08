@@ -18,6 +18,12 @@ class Solution:
         # the source string is a subsequence of the target string
         return pLeft==sourceSize
 
+
+"""
+recursion solution
+"""
+
+
 if __name__ == '__main__':
     sol=Solution()
     print(sol.isSubSequence("abc","axxbxxcxx"))
