@@ -45,6 +45,7 @@ print(list2.reverse())
 print(list2)
 #output [1,2,3]
 list2=[1,3,2]
+#print(list2[::-1]) prints [2,3,1]
 list2.sort()
 #output [1,2,3]
 list3=list2.copy()
