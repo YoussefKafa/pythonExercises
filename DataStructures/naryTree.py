@@ -38,4 +38,3 @@ if __name__=='__main__':
     tree.root.child[1].addChild(32)
     tree.root.child[1].addChild(33)
     print(Tools.dfs(tree.root))
-
