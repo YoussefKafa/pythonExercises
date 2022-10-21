@@ -3,9 +3,8 @@ import sys
 def isPalindrome(s):
     left=0
     right=len(s)-1
-    l=list(s)
     while left<right:
-        if l[left]!=l[right]:
+        if s[left]!=s[right]:
             return False
         left+=1
         right-=1
