@@ -1,3 +1,12 @@
+"""
+Given two sorted integer arrays, return an array that combines both of them and is also sorted.
+We can build the answer array ans one element at a time.
+ Start two pointers at the first index of each array, and compare their elements. 
+ At each iteration, we have 2 values.
+  Whichever value is lower needs to come first in the answer, so add it to the answer and move the respective pointer.
+
+"""
+
 def combine(arr1, arr2):
     ans = []
     i = j = 0
