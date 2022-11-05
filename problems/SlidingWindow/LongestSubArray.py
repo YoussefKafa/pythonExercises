@@ -9,6 +9,7 @@ def longestSubArr(nums,k):
         while curr > k:
             curr-=nums[left]
             left+=1
+        #to save the longest size found where right - left+1 is the size of the current subarray
         ans=max(ans,right-left+1)
     return ans
 if __name__=='__main__':
