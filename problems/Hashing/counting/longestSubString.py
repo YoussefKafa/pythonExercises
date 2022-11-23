@@ -6,7 +6,6 @@ The longest substring with at most 2 distinct characters is "ece".
 """
 
 from collections import defaultdict
-
 def find_longest_substring(s, k):
     counts=defaultdict(int)
     left=ans=0
