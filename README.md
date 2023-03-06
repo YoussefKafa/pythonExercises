@@ -10,14 +10,14 @@ Feel free to browse the repository and read the code. If you have any questions 
 ## Topics covered
 Here are some of the topics that I have covered in this repository:
 
-Data structures
-Algorithms
-Problem solving
-Object-oriented programming
-File I/O
-Exceptions
-Strings
-Testing
+- Data structures
+- Algorithms
+- Problem solving
+- Object-oriented programming
+- File I/O
+- Exceptions
+- Strings
+- Testing
 
 
 ## Contributing
