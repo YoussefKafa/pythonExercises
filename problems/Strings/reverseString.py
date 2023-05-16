@@ -35,6 +35,10 @@ def reverseString2(str:list[chr]) -> list[chr]:
         str[i],str[len(str)-i-1]=str[len(str)-i-1],str[i]
         
     return str
+
+def reverseString3(str:list[chr])->list[chr]:
+    str[:]=str[::-1]
+    return str
 """
 ['h','e','l','l','o'] = reverseString
 i=0
@@ -47,3 +51,5 @@ if __name__=='__main__':
     print(reverseString1(str))
     str=["h","e","l","l","o"]
     print(reverseString2(str))
+    str=["h","e","l","l","o"]
+    print(reverseString3(str))
