@@ -24,3 +24,16 @@ Constraints:
 -231 <= x <= 231 - 1
 """
 
+def reverse(x: int) -> int:
+    sign=[1,-1][x<0]
+    x=abs(x)
+    rev=0
+    while x:
+        x,mod=divmod(x,10)
+        rev=rev*10+mod
+        if rev>2**31-1:
+            return 0
+    return sign*rev
+
+print(reverse(123))
+print(reverse(-123))
