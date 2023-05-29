@@ -39,7 +39,7 @@ def moveZeroes1(nums:list[int])->list[int]:
             left+=1
     return nums
 
-print(moveZeroes1([0,1,0,2]))
+print(moveZeroes1([1,2,3]))
 """
 Initial state:
 nums = [0, 1, 0, 2]

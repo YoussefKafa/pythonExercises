@@ -23,10 +23,12 @@ class Solution:
         for i in range(1, size):
             if nums[i - 1] != nums[i]:      
                 nums[insertIndex] = nums[i] 
-                insertIndex = insertIndex + 1       
+                insertIndex = insertIndex + 1    
+        print(nums)   
         return insertIndex
 sol=Solution()
 print(sol.removeDuplicates([1,1,2]))
+print(sol.removeDuplicates([1,1,2,3]))
 print(sol.removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
 
 """

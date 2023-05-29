@@ -35,6 +35,6 @@ class Solution:
                     maxProfit += prices[i] - prices[i-1]
             return maxProfit
 if __name__=='__main__':
-    prices=[7,6,4,3,1]
+    prices=[6,7,4,1,5]
     sol=Solution()
     print(sol.bestProfit(prices))

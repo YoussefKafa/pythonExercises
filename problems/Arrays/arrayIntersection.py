@@ -40,3 +40,4 @@ def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
     return result
 print(intersect([1,2,2,1],[2,2]))
 print(intersect([4,9,5],[9,4,9,8,4]))
+print([2]*5)
