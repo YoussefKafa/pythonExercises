@@ -41,4 +41,13 @@ def plusOne(digits: list[int]) -> list[int]:
     number+=1
     return list(map(int,str(number)))
 
-print(plusOne([1,2,3]))
+def plusOne1(digits:list[int]) -> list[int]:
+    for i in range(len(digits)-1,-1,-1):
+        if digits[i]<9:
+            print("inside")
+            digits[i]+=1
+            return digits
+        else:
+            digits[i]=0
+    return [1]+digits
+print(plusOne1([999]))
