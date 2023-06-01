@@ -26,4 +26,6 @@ def singleNumber(nums: list[int]) -> int:
             no_duplicates.remove(i)
     return no_duplicates.pop()
 
+
+
 print(singleNumber([2,2,1]))
