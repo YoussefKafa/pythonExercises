@@ -1,6 +1,6 @@
 def sequencialSearch(nums:list[int],target:int)-> list[int]:
-    for i in range(len(nums)):
-        if nums[i]==target:
+    for i,v in enumerate(nums):
+        if v==target:
             return i
     return -1
 
