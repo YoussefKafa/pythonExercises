@@ -24,7 +24,7 @@ class Solution:
             if nums[i - 1] != nums[i]:      
                 nums[insertIndex] = nums[i] 
                 insertIndex = insertIndex + 1    
-        print(nums)   
+        print(nums)
         return insertIndex
 sol=Solution()
 print(sol.removeDuplicates([1,1,2]))

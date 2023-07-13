@@ -30,6 +30,11 @@ def rotate2(nums:list[int],k:int):
         l = len(nums) # 4
         k = k%l # 4%2 =0
         nums[0:l] = nums[l-k:l] + nums[0:l-k]
+def rotateLeft(nums:list[int],k:int):
+        while k > 0:
+                num=nums.pop(0)
+                nums.append(num)
+                k = k - 1
 nums=[-1,-100,3,99]
 rotate(nums,2)
 print(nums)
