@@ -41,3 +41,20 @@ def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
 print(intersect([1,2,2,1],[2,2]))
 print(intersect([4,9,5],[9,4,9,8,4]))
 print([2]*5)
+
+
+def findTheIntersectionOfTwoArrays(num1:list, num2:list) -> list:
+    i,j=0,0
+    res=[]
+    num1.sort()
+    num2.sort()
+    while i<len(num1) and j<len(num2):
+        if num1[i]==num2[j]:
+            res.append(num1[i])
+            i+=1
+            j+=1
+        elif num1[i]<num2[j]:
+            i+=1
+        else:
+            j+=1
+    return res
