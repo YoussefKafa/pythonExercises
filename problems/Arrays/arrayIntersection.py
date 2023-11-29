@@ -21,6 +21,12 @@ Constraints:
 1 <= nums1.length, nums2.length <= 1000
 0 <= nums1[i], nums2[i] <= 1000
 """
+
+"""
+the intersection between two arrays is the common elements between them and it can be in any order
+The intersection of two arrays is a new array that contains only the elements that are common to both arrays
+"""
+#without sorting
 def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
     dict={}
     result=[]
@@ -38,10 +44,17 @@ def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
             if dict[i]==0:
                 del dict[i]
     return result
-print(intersect([1,2,2,1],[2,2]))
+print(intersect([1,2,2,1],[2,1,2]))
 print(intersect([4,9,5],[9,4,9,8,4]))
 print([2]*5)
-
+#explanation
+"""
+1. create a dictionary and store the count of each element in nums1
+2. iterate through nums2 and check if the element is present in the dictionary
+3. if present, append the element to the result and decrement the count in the dictionary
+4. if the count is zero, delete the element from the dictionary
+5. return the result
+"""
 
 def findTheIntersectionOfTwoArrays(num1:list, num2:list) -> list:
     i,j=0,0
