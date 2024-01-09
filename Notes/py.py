@@ -99,10 +99,69 @@ None Type:	NoneType e.g. None it is used to define a null value, or no value at 
 """
 ######################
 """
+# Numbers:
+# three numbers types in Python:
+# int, float, complex
+# 1 , 1.0 , 1j
+x=1
+print(type(x))
+x=2.8
+print(int(x)) #2
+print(float(x)) #2.8
+print(complex(x)) #(2.8+0j)
+#random number:
+import random
+print(random.randrange(1,10)) #random number between 1 and 9
+print(float("5")) #5.0
+print(int("x")) #ValueError
+print(str("5")) #5
 """
 ######################
+"""
+# Strings:
+a = "Hello, World!"
+print(a)
+print(a[:]) #Hello, World!
+print(a[0]) #H
+print(a[6:]) #World!
+print(a[-1]) #!
+print(a[-6:]) #World!
+#multiline strings starts with three double quotes or three single quotes:
+txt="We the people"
+print("people" in txt) #True
+if "people" not in txt:
+    print("No")
+else:
+    print("Yes") #Yes
+b = "Hello, World!"
+print(b[2:5]) #llo without 5
+print(b.upper())
+print(b.lower())
+b = " Hello, World!  "
+print(a.strip()) # returns "Hello, World!"
+print(a.replace("H", "J"))
+print(a.split(",")) # returns ['Hello', ' World!']
+a = "Hello"
+b = "World"
+c = a +" "+ b
+print(c)
+age = 36
+txt = "My name is John, and I am " + age #TypeError: can only concatenate str (not "int") to str
+txt = "My name is John, and I am " + str(age)
+#or
+txt = "My name is John, and I am {}"
+quantity = 3
+itemno = 567
+price = 49.95
+myOrder="I want {} pieces of item {} for {} dollars."
+print(myOrder.format(quantity, itemno, price))
+myOrder="I want to pay {2} dollars for {0} pieces of item {1}."
+print(myOrder.format(quantity, itemno, price))
+"""
 ######################
 """
+# Booleans:
+
 """
 ############################################
 """
