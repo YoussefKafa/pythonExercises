@@ -161,6 +161,34 @@ print(myOrder.format(quantity, itemno, price))
 ######################
 """
 # Booleans:
+x=False
+y=None
+z= 15
+a="hello"
+print(bool(x))  #False
+print(bool(y))  #False
+print(bool(z))  #True
+print(bool(a))  #True
+bool(0) #False
+bool("") #False
+bool(()) #False
+bool([]) #False
+bool({}) #False
+class myclass():
+    def __len__(self): #len() function returns the length of an object
+        return 0
+myobj = myclass()
+print(bool(myobj)) #False
+
+def myfunction():
+        return True
+if myfunction():
+    print("YES!")
+
+x=10;
+print(isinstance(x,int)) #True
+print(isinstance(x,float)) #False
+
 
 """
 ############################################
